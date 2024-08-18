@@ -5,7 +5,7 @@ import SecondCounter from "./SecondsCounter";
 const Home = () => {
   return (
     <div className="">
-      <SecondCounter />
+      <SecondCounter seconds="10"/>
     </div>
   );
 };
