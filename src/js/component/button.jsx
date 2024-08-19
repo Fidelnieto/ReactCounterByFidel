@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 const ReloadButton = () => {
   const handleClick = () => {
@@ -6,7 +6,9 @@ const ReloadButton = () => {
   };
 
   return (
-    <button className='btn btn-dark w-100 rounded-0' onClick={handleClick}>Reiniciar Página</button>
+    <button className="btn btn-dark w-100 rounded-0" onClick={handleClick}>
+      Reset
+    </button>
   );
 };
 
