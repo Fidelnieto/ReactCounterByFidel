@@ -1,11 +1,16 @@
 import React from "react";
-import SecondCounter from "./SecondsCounter";
+import {SecondCounter} from "./SecondsCounter";
+import ReloadButton from "./button";
+
+const seconds = prompt("Ingrese numero")
 
 //create your first component
 const Home = () => {
+
   return (
     <div className="">
-      <SecondCounter seconds="10"/>
+      <SecondCounter seconds={seconds}/>
+      <ReloadButton />
     </div>
   );
 };
