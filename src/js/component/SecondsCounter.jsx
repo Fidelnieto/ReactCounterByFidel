@@ -8,7 +8,6 @@ export function SecondCounter(props) {
 
   useEffect(() => {
     if (count == props.seconds) {
-      alert("You reached the time");
       return;
     } else {
       const interval = setInterval(
@@ -23,6 +22,9 @@ export function SecondCounter(props) {
   return (
     <div className="text-center mt-5">
       <h1 style={{ fontSize: "100px" }}>{formattedCounter}</h1>
+      <span className={count == props.seconds ? "able" : "d-none"}>
+        You reached the time
+      </span>
     </div>
   );
 }
